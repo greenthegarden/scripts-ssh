@@ -2,7 +2,6 @@
 
 export key_algorithm="rsa" # one of rsa, dsa, ecdsa, ed25519
 export key_size="4096"
-export key_comment="shrr"
-export key_file="id_${key_algorithm}_shrr
+export key_comment=""
+export key_file="id_${key_algorithm}"
 export key_file_dir="${HOME}/.ssh"
-
