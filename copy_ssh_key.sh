@@ -1,4 +1,3 @@
-
 #!/usr/bin/env bash
 
 source ./key_vars.sh
