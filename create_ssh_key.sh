@@ -11,7 +11,7 @@ function create_key {
   export key_file
 }
 
-read -p "Enter key algorithm [${key_algorithm}]: " key_algorithm_input
+read -p "Enter key algorithm (one of rsa, dsa, ecdsa, ed25519) [${key_algorithm}]: " key_algorithm_input
 key_algorithm=${key_algorithm_input:-${key_algorithm}}
 if [[ ! "$key_algorithm" =~ ^(rsa|dsa|ecdsa|ed25519)$ ]] ; then
   exit
