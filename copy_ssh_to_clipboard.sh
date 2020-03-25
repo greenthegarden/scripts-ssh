@@ -2,6 +2,8 @@
 
 # Note required the package 'xclip' to be installed
 
+hash xclip 2>/dev/null || { echo >&2 "Script requires xclip but it's not installed.  Aborting."; exit 1; }
+
 source ./key_vars.sh
 
 remote_user=${USER}
